@@ -3,8 +3,6 @@ import { StyleSheet, Text, View, Image, TouchableOpacity } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 
 import StartScreen from "./screens/startScreen";
-import Header from "./components/Header";
-import WalletCard from "./components/WalletCard";
 
 export default function App() {
   return (
