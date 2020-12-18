@@ -12,7 +12,9 @@ export default function App() {
       colors={["#AF90F2", "#DF8D9F"]}
       style={{ flex: 1, paddingVertical: 40 }}
     >
-      <StartScreen />
+      <Header title="WALLET"/>
+      <WalletCard style={{marginTop:60}} wallet="Total" money="0"/>
+      {/* <StartScreen /> */}
     </LinearGradient>
   );
 }
