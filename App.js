@@ -1,21 +1,18 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import { StyleSheet, Text, View, Image, TouchableOpacity } from "react-native";
+import { LinearGradient } from "expo-linear-gradient";
+
+import StartScreen from "./screens/startScreen";
+import Header from "./components/Header";
+import WalletCard from "./components/WalletCard";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <LinearGradient
+      colors={["#AF90F2", "#DF8D9F"]}
+      style={{ flex: 1, paddingVertical: 40 }}
+    >
+      <StartScreen />
+    </LinearGradient>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
