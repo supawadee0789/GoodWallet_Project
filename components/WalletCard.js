@@ -24,8 +24,10 @@ const styles = StyleSheet.create({
     backgroundColor: "white",
     borderRadius: 34,
     alignSelf: "center",
-    height: "23%",
+    height: 180,
     width: "88%",
+    marginTop:60,
+    marginBottom:37,
   },
   content: {
     flex: 1,

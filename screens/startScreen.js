@@ -10,7 +10,7 @@ const StartScreen = props => {
       <View style={{flex:1,justifyContent:'center'}}>
         <Image source={logo} />
       </View>
-      <View style={{justifyContent:'flex-end'}}> 
+      <View style={{justifyContent:'flex-end',paddingBottom:40}}> 
         <TouchableOpacity onPress={() => alert("hhh")}>
           <Text style={{ color: "white", fontSize: 25 }}>
             SWIPE UP{"\n"}TO START
