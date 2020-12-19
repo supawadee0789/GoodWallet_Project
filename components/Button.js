@@ -8,6 +8,7 @@ const Button = ({
   fontColor,
   fontSize,
   width,
+  height,
 }) => {
   return (
     <TouchableOpacity
@@ -16,6 +17,7 @@ const Button = ({
         styles.buttonContainer,
         backgroundColor && { backgroundColor },
         width && { width },
+        height && { height }
       ]}
     >
       <View style={{ alignItems: "center" }}>

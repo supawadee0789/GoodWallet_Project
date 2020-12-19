@@ -9,12 +9,12 @@ import CustomButton from "../components/Button";
 const AddWalletScreen = (props) => {
   return (
     <SafeAreaView style={styles.container}>
-      <Header title="WALLET" />
+      <Header title="WALLET" back={props.navigation.goBack()} />
       <View style={styles.content}>
         <AddWalletCard />
       </View>
       <View style={{alignItems:'center'}}>
-         <CustomButton onPress={null} title='Add New Wallet' backgroundColor="#6A2388" fontColor={'#F4F6FF'} fontSize={22} width={290}/> 
+         <CustomButton onPress={null} title='Add New Wallet' backgroundColor="#6A2388" fontColor={'#F4F6FF'} fontSize={22} width={290} /> 
       </View>
       
     </SafeAreaView>

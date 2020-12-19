@@ -2,8 +2,8 @@ import React from "react";
 import { TouchableWithoutFeedback ,Keyboard } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 
-import StartScreen from "./screens/startScreen";
-import AddWalletScreen from "./screens/AddWalletScreen";
+
+import AppNavigator from './navigation/AppNavigator'
 
 export default function App() {
   return (
@@ -16,9 +16,8 @@ export default function App() {
         colors={["#AF90F2", "#DF8D9F"]}
         style={{ flex: 1, paddingTop: 15 }}
       >
-        <AddWalletScreen />
-
-        {/* <StartScreen /> */}
+        
+      <AppNavigator/>
       </LinearGradient>
     </TouchableWithoutFeedback>
   );

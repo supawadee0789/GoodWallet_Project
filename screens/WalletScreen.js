@@ -10,7 +10,7 @@ import AddWalletButtonBar from "../components/AddWalletButtonBar";
 const WalletScreen = (props) => {
   return (
     <SafeAreaView style={styles.container}>
-        <Header title="WALLET" />
+        <Header title="WALLET" back={props.navigation.goBack()}/>
         <WalletCard wallet="Total" money="0" />
         <ScrollView >
         <MinorCard wallet="Saving" money="20,000" />
@@ -21,7 +21,7 @@ const WalletScreen = (props) => {
         <MinorCard wallet="Cash" money="2,000" />
         <MinorCard wallet="Cash" money="2,000" />
       </ScrollView>
-      <AddWalletButtonBar/>
+      <AddWalletButtonBar onPress={props.navigation.push('AddWallet')}/>
     </SafeAreaView>
   );
 };

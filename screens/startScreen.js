@@ -11,7 +11,7 @@ const StartScreen = props => {
         <Image source={logo} />
       </View>
       <View style={{justifyContent:'flex-end',paddingBottom:40}}> 
-        <TouchableOpacity onPress={() => alert("Hello Edok")}>
+        <TouchableOpacity onPress={() => {props.navigation.push('Wallet');console.log('clicked');}}>
           <Text style={{ color: "white", fontSize: 25 }}>
             SWIPE UP{"\n"}TO START
           </Text>

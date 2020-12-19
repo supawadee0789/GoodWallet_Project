@@ -12,7 +12,7 @@ const Header = (props) => {
       }}
     >
       <View style={{ marginRight: 45 }}>
-        <TouchableOpacity onPress={() => null}>
+        <TouchableOpacity onPress={() => {props.back}}>
           <MaterialIcons name="arrow-back-ios" size={24} color="white" />
         </TouchableOpacity>
       </View>
