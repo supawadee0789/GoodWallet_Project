@@ -1,6 +1,8 @@
 import * as React from "react";
+import 'react-native-gesture-handler';
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
+
 
 import Start from "../screens/startScreen";
 import WalletScreen from '../screens/WalletScreen';
@@ -19,6 +21,7 @@ const AppNavigator = () => {
             shadowColor: "transparent",
           },
         }}
+        initialRouteName = "Home"
       >
         <Stack.Screen name="Home" component={Start} />
         <Stack.Screen name="Wallet" component={WalletScreen} />

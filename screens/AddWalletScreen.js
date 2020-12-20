@@ -9,7 +9,7 @@ import CustomButton from "../components/Button";
 const AddWalletScreen = (props) => {
   return (
     <SafeAreaView style={styles.container}>
-      <Header title="WALLET" back={props.navigation.goBack()} />
+      <Header title="WALLET" backBtn={()=>props.navigation.goBack()} />
       <View style={styles.content}>
         <AddWalletCard />
       </View>

@@ -2,7 +2,7 @@ import React from "react";
 import { View, Text, TouchableOpacity } from "react-native";
 import { Fontisto, MaterialIcons } from "@expo/vector-icons";
 
-const Header = (props) => {
+const Header = ({title, backBtn}) => {
   return (
     <View
       style={{
@@ -12,7 +12,7 @@ const Header = (props) => {
       }}
     >
       <View style={{ marginRight: 45 }}>
-        <TouchableOpacity onPress={() => {props.back}}>
+        <TouchableOpacity onPress={backBtn}>
           <MaterialIcons name="arrow-back-ios" size={24} color="white" />
         </TouchableOpacity>
       </View>
@@ -25,7 +25,7 @@ const Header = (props) => {
             letterSpacing: 0.75,
           }}
         >
-          {props.title}
+          {title}
         </Text>
       </View>
       <View style={{ flexDirection: "row", alignItems: "baseline" }}>
