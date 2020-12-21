@@ -13,9 +13,6 @@ const AddWalletScreen = (props) => {
       <View style={styles.content}>
         <AddWalletCard />
       </View>
-      <View style={{alignItems:'center'}}>
-         <CustomButton onPress={null} title='Add New Wallet' backgroundColor="#6A2388" fontColor={'#F4F6FF'} fontSize={22} width={290} /> 
-      </View>
       
     </SafeAreaView>
   );
@@ -23,7 +20,7 @@ const AddWalletScreen = (props) => {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    // flex: 1,
     marginTop: Constants.statusBarHeight,
   },
   content: {
