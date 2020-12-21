@@ -4,6 +4,7 @@ import { LinearGradient } from "expo-linear-gradient";
 
 
 import AppNavigator from './navigation/AppNavigator'
+import AddWallet from './screens/AddWalletScreen'
 
 export default function App() {
   return (
@@ -16,8 +17,8 @@ export default function App() {
         colors={["#AF90F2", "#DF8D9F"]}
         style={{ flex: 1, paddingTop: 15 }}
       >
-        
-      <AppNavigator/>
+        <AddWallet/>
+      {/* <AppNavigator/> */}
       </LinearGradient>
     </TouchableWithoutFeedback>
   );

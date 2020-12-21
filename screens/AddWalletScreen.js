@@ -5,6 +5,7 @@ import Constants from "expo-constants";
 import Header from "../components/Header";
 import AddWalletCard from "../components/AddWalletCard";
 import CustomButton from "../components/Button";
+import ListItem from '../components/ListWallet'
 
 const AddWalletScreen = (props) => {
   return (
@@ -13,7 +14,7 @@ const AddWalletScreen = (props) => {
       <View style={styles.content}>
         <AddWalletCard />
       </View>
-      
+      <ListItem/>
     </SafeAreaView>
   );
 };
